@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="goodzo.swipewidget.SwipeWidget" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Native"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Swipe Widget</name>
+    <description>Swipe on a native mobile page to trigger a nanoflow</description>
+    <icon/>
+    <properties>
+        <propertyGroup caption="General">
+            <property key="data" type="datasource" isList="true" required="false">
+                <caption>Data source</caption>
+                <description />
+            </property>
+            <property key="content" type="widgets" required="false">
+                <caption>Content</caption>
+                <description>Content of the widget</description>
+            </property>
+            <property key="onSwipeRight" type="action">
+                <caption>On swipe right</caption>
+                <description>Action to be performed when swiping right</description>
+            </property>
+            <property key="onSwipeLeft" type="action">
+                <caption>On swipe left</caption>
+                <description>Action to be performed when swiping left</description>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>
